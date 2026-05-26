@@ -136,7 +136,7 @@ function updateMap(lat, lon, data) {
 
 async function fetchweather() {
     let searchcity = search_input.value;
-    let apiKey = your apiKey;
+    let apiKey = yourapiKey;
     let url = `https://api.openweathermap.org/data/2.5/weather?q=${searchcity}&appid=${apiKey}&units=metric`;
 
     try {
@@ -178,7 +178,7 @@ async function fetchweather() {
 
 
 async function uvindex(lat, lon) {
-    let apiKey = your apiKey;
+    let apiKey = yourapiKey;
     let url = `https://api.openweathermap.org/data/2.5/uvi?lat=${lat}&lon=${lon}&appid=${apiKey}`;
     let response = await fetch(url)
     let data = await response.json()
@@ -186,7 +186,7 @@ async function uvindex(lat, lon) {
 }
 
 async function aqi(lat, lon) {
-    let apiKey = your apiKey;
+    let apiKey = yourapiKey;
     let url = `https://api.openweathermap.org/data/2.5/air_pollution?lat=${lat}&lon=${lon}&appid=${apiKey}`;
     let response = await fetch(url)
     let data = await response.json()
@@ -194,7 +194,7 @@ async function aqi(lat, lon) {
 }
 
 async function fetchForecast(searchcity) {
-    let apiKey = your apiKey;
+    let apiKey = yourapiKey;
     let url = `https://api.openweathermap.org/data/2.5/forecast?q=${searchcity}&appid=${apiKey}&units=metric`;
     let response = await fetch(url)
     let data = await response.json()
