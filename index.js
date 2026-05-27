@@ -1,4 +1,3 @@
-
 let current_date = document.querySelector(".current-date")
 let search_input = document.querySelector(".search-input")
 let errormsg = document.querySelector(".errormsg")
